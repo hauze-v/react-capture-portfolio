@@ -34,8 +34,8 @@ const GlobalStyle = createGlobalStyle`
     color: white;
   }
   h4 {
-    color: #23d997;
     font-weight: bold;
+    font-size: 2rem;
   }
   a {
     font-size: 1.1.rem;

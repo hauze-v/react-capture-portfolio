@@ -5,7 +5,7 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
 // Import Styles
-import { Layout, Description, Image, Hide } from "../styles";
+import { Layout, Description, Image } from "../styles";
 import styled from "styled-components";
 
 const ServicesSection = () => {

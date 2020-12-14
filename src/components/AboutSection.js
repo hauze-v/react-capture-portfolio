@@ -1,6 +1,5 @@
 import home1 from "../img/home1.png";
 // Styles
-import styled from "styled-components";
 import { Layout, Description, Image, Hide } from "../styles";
 
 const AboutSection = () => {

@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { MovieState } from "../movieState";
+// Animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 // Movie Details Component
 const MovieDetail = () => {
@@ -21,7 +24,12 @@ const MovieDetail = () => {
   return (
     <>
       {movie && ( // This wrapper checks to make sure movie is available since it takes a second to load the data
-        <MovieDetails>
+        <MovieDetails
+          variants={pageAnimation}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+        >
           <Headline>
             <h2>{movie.title}</h2>
             <img src={movie.mainImg} alt="Main movie" />
@@ -56,7 +64,7 @@ const Award = ({ title, description }) => {
 };
 
 // Styled Components
-const MovieDetails = styled.div`
+const MovieDetails = styled(motion.div)`
   color: white;
 `;
 

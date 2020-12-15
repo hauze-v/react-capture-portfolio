@@ -20,7 +20,7 @@ function App() {
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
+        <Switch location={location} key={location.key}>
           <Route exact path="/" component={AboutUs}></Route>
           <Route exact path="/work" component={OurWork}></Route>
           <Route exact path="/contact" component={ContactUs}></Route>

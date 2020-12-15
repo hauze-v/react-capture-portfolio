@@ -50,6 +50,9 @@ const Movie = styled.div`
     background: #cccccc;
     margin-bottom: 3rem;
   }
+  h2 {
+    color: white;
+  }
   img {
     width: 100%;
     height: 70vh;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// Styled Components
+// Global Styled Components
 export const Layout = styled.div`
   min-height: 90vh;
   display: flex;

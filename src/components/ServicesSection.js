@@ -75,10 +75,8 @@ const Card = styled.div`
     align-items: center;
     h3 {
       margin-left: 1rem;
-      background: white;
-      color: black;
+      color: white;
       padding: 1rem;
-      border-radius: 2px;
     }
   }
 `;

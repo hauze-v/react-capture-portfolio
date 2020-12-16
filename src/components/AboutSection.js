@@ -26,6 +26,7 @@ const AboutSection = () => {
     },
   }; */
 
+  /* To break an element out of the staggering children of animation, add the hidden and show animate properties */
   return (
     <Layout>
       <Description>

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { Hide } from "../styles";
 // Images
 import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import couple from "../img/couple.jpg";
+import car from "../img/car.jpg";
 // Animations
 import { motion } from "framer-motion";
 import {
@@ -47,14 +47,14 @@ const OurWork = () => {
         <h2>The Racer</h2>
         <div className="line"></div>
         <Link to="/work/the-racer">
-          <img src={theracer} alt="a racer" />
+          <img src={car} alt="a racer" />
         </Link>
       </Movie>
       <Movie>
         <h2>Good Times</h2>
         <div className="line"></div>
         <Link to="/work/good-times">
-          <img src={goodtimes} alt="good times" />
+          <img src={couple} alt="good times" />
         </Link>
       </Movie>
     </Work>

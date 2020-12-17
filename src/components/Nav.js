@@ -44,10 +44,12 @@ const StyledNav = styled.nav`
     font-size: 1.5rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
+    /* margin-left: 150px; */
   }
   li {
     padding-left: 10rem;
     position: relative;
+    font-size: 1.15rem;
   }
 `;
 

@@ -66,6 +66,7 @@ const Services = styled(Layout)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 85%;
 `;
 
 const Card = styled.div`

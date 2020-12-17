@@ -1,60 +1,60 @@
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Layout } from "../styles";
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion"; // Detects if our layout changes and if so, animates it
 
 const FaqSection = () => {
+  // Our State
+  const [faqToggle, setFaqToggle] = useState(false);
+
   return (
     <Faq>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How do I start?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-            suscipit. Sapiente optio, numquam rerum dicta quidem ab molestiae,
-            obcaecati error reprehenderit magnam eum ipsa. Dolore libero
-            exercitationem omnis repellendus aspernatur!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Daily schedule?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-            suscipit. Sapiente optio, numquam rerum dicta quidem ab molestiae,
-            obcaecati error reprehenderit magnam eum ipsa. Dolore libero
-            exercitationem omnis repellendus aspernatur!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Different payment methods?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-            suscipit. Sapiente optio, numquam rerum dicta quidem ab molestiae,
-            obcaecati error reprehenderit magnam eum ipsa. Dolore libero
-            exercitationem omnis repellendus aspernatur!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What products do you offer?</h4>
-        <div className="answer">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-            suscipit. Sapiente optio, numquam rerum dicta quidem ab molestiae,
-            obcaecati error reprehenderit magnam eum ipsa. Dolore libero
-            exercitationem omnis repellendus aspernatur!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Eos, suscipit. Sapiente optio, numquam rerum dicta quidem ab
+              molestiae, obcaecati error reprehenderit magnam eum ipsa. Dolore
+              libero exercitationem omnis repellendus aspernatur!
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Daily schedule?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Eos, suscipit. Sapiente optio, numquam rerum dicta quidem ab
+              molestiae, obcaecati error reprehenderit magnam eum ipsa. Dolore
+              libero exercitationem omnis repellendus aspernatur!
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Different payment methods?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Eos, suscipit. Sapiente optio, numquam rerum dicta quidem ab
+              molestiae, obcaecati error reprehenderit magnam eum ipsa. Dolore
+              libero exercitationem omnis repellendus aspernatur!
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What products do you offer?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+              Eos, suscipit. Sapiente optio, numquam rerum dicta quidem ab
+              molestiae, obcaecati error reprehenderit magnam eum ipsa. Dolore
+              libero exercitationem omnis repellendus aspernatur!
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
@@ -72,14 +72,16 @@ const Faq = styled(Layout)`
     background: #cccccc;
     height: 0.2rem;
     margin: 2rem 0rem;
+    margin-bottom: 1rem;
     width: 100%;
   }
   .question {
-    padding: 3rem 0rem;
+    padding: 2rem 0rem;
+    padding-bottom: 1rem;
     cursor: pointer;
   }
   .answer {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     p {
       padding: 1rem 0rem;
     }

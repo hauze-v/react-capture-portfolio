@@ -76,8 +76,12 @@ const Services = styled(Layout)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+  border: 2px solid red;
   @media (max-width: 1300px) {
     justify-content: center;
+  }
+  @media (max-width: 500px) {
+    padding-left: 50px;
   }
 `;
 

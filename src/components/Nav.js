@@ -70,6 +70,9 @@ const StyledNav = styled.nav`
       }
     }
   }
+  @media (max-width: 500px) {
+    padding: 1rem 1rem;
+  }
 `;
 
 export default Nav;

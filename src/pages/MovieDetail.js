@@ -86,6 +86,11 @@ const Headline = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 3rem;
+    }
+  }
 `;
 
 const Awards = styled.div`
@@ -113,6 +118,9 @@ const AwardStyle = styled.div`
   }
   p {
     padding: 2rem 0rem;
+  }
+  @media (max-width: 500px) {
+    padding: 2rem;
   }
 `;
 

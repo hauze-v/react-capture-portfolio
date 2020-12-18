@@ -104,6 +104,12 @@ const Movie = styled(motion.div)`
     height: 70vh;
     object-fit: cover;
   }
+  @media (max-width: 500px) {
+    padding-bottom: 5rem;
+    h2 {
+      font-size: 3rem;
+    }
+  }
 `;
 
 // Frame Animation

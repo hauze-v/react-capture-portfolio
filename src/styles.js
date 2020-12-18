@@ -28,6 +28,14 @@ export const Description = styled.div`
       margin: 2rem 0rem 5rem 0rem;
     }
   }
+  @media (max-width: 414px) {
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
 `;
 
 export const Image = styled.div`

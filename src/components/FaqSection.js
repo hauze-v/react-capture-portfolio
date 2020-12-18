@@ -3,13 +3,20 @@ import styled from "styled-components";
 import { Layout } from "../styles";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion"; // Detects if our layout changes and if so, animates it
+import { useScroll } from "./useScroll";
+import { scrollReveal } from "../animation";
 
 const FaqSection = () => {
   // Our State
-  const [faqToggle, setFaqToggle] = useState(false);
+  const [element, controls] = useScroll();
 
   return (
-    <Faq>
+    <Faq
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden"
+    >
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -60,6 +67,7 @@ const FaqSection = () => {
 };
 
 const Faq = styled(Layout)`
+  overflow: hidden;
   display: block;
   span {
     display: block;

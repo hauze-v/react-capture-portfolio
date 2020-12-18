@@ -7,10 +7,20 @@ import home2 from "../img/home2.png";
 // Import Styles
 import { Layout, Description, Image } from "../styles";
 import styled from "styled-components";
+// Use Scroll
+import { useScroll } from "./useScroll";
+// Import Animation
+import { fadeAnim } from "../animation";
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Services>
+    <Services
+      ref={element}
+      animate={controls}
+      variants={fadeAnim}
+      initial="hidden"
+    >
       <Description>
         <h2>
           High <span>quality</span> services
@@ -66,11 +76,10 @@ const Services = styled(Layout)`
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 85%;
 `;
 
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 22.5rem;
   .icon {
     display: flex;
     align-items: center;

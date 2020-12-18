@@ -10,6 +10,8 @@ import GlobalStyle from "./components/GlobalStyle";
 import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from "framer-motion";
+// ScrollTop useEffect
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   /* Use useLocation to grab the page object which has a specific key for each page */

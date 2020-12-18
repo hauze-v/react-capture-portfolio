@@ -5,6 +5,8 @@ import { MovieState } from "../movieState";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
+// Components
+import ScrollTop from "../components/ScrollTop";
 
 // Movie Details Component
 const MovieDetail = () => {
@@ -23,6 +25,7 @@ const MovieDetail = () => {
 
   return (
     <>
+      <ScrollTop />
       {movie && ( // This wrapper checks to make sure movie is available since it takes a second to load the data
         <MovieDetails
           variants={pageAnimation}
@@ -91,6 +94,10 @@ const Awards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1500px) {
+    display: block;
+    margin: 2rem 2rem;
+  }
 `;
 
 const AwardStyle = styled.div`

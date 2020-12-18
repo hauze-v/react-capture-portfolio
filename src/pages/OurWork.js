@@ -17,62 +17,66 @@ import {
   lineAnim,
   slider,
   sliderContainer,
-  swoopAdoop,
 } from "../animation";
+// Components
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
   // useScroll State
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   return (
-    <Work
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
-      style={{ background: "#fff" }}
-    >
-      <motion.div variants={sliderContainer} className="div">
-        <Frame1 variants={slider}></Frame1>
-        <Frame2 variants={slider}></Frame2>
-        <Frame3 variants={slider}></Frame3>
-        <Frame4 variants={slider}></Frame4>
-      </motion.div>
+    <>
+      <ScrollTop />
+      <Work
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        exit="exit"
+        style={{ background: "#fff" }}
+      >
+        <motion.div variants={sliderContainer} className="div">
+          <Frame1 variants={slider}></Frame1>
+          <Frame2 variants={slider}></Frame2>
+          <Frame3 variants={slider}></Frame3>
+          <Frame4 variants={slider}></Frame4>
+        </motion.div>
 
-      <Movie>
-        <motion.h2 variants={fadeAnim}>The Athlete</motion.h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-athlete">
-          <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
-          </Hide>
-        </Link>
-      </Movie>
-      <Movie
-        ref={element}
-        variants={fadeAnim}
-        animate={controls}
-        initial="hidden"
-      >
-        <h2>The Racer</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/the-racer">
-          <img src={car} alt="a racer" />
-        </Link>
-      </Movie>
-      <Movie
-        ref={element2}
-        variants={fadeAnim}
-        animate={controls2}
-        initial="hidden"
-      >
-        <h2>Good Times</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/good-times">
-          <img src={couple} alt="good times" />
-        </Link>
-      </Movie>
-    </Work>
+        <Movie>
+          <motion.h2 variants={fadeAnim}>The Athlete</motion.h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <Link to="/work/the-athlete">
+            <Hide>
+              <motion.img variants={photoAnim} src={athlete} alt="athlete" />
+            </Hide>
+          </Link>
+        </Movie>
+        <Movie
+          ref={element}
+          variants={fadeAnim}
+          animate={controls}
+          initial="hidden"
+        >
+          <h2>The Racer</h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <Link to="/work/the-racer">
+            <img src={car} alt="a racer" />
+          </Link>
+        </Movie>
+        <Movie
+          ref={element2}
+          variants={fadeAnim}
+          animate={controls2}
+          initial="hidden"
+        >
+          <h2>Good Times</h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <Link to="/work/good-times">
+            <img src={couple} alt="good times" />
+          </Link>
+        </Movie>
+      </Work>
+    </>
   );
 };
 
@@ -82,6 +86,9 @@ const Work = styled(motion.div)`
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
+  }
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
   }
 `;
 

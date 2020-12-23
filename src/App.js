@@ -14,6 +14,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   /* Use useLocation to grab the page object which has a specific key for each page */
   const location = useLocation();
+  console.log(location.pathname);
 
   return (
     <div className="App">
@@ -21,10 +22,26 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.key}>
-          <Route exact path="/" component={AboutUs}></Route>
-          <Route exact path="/work" component={OurWork}></Route>
-          <Route exact path="/contact" component={ContactUs}></Route>
-          <Route exact path="/work/:id" component={MovieDetail}></Route>
+          <Route
+            exact
+            path="/react-capture-portfolio"
+            component={AboutUs}
+          ></Route>
+          <Route
+            exact
+            path="/react-capture-portfolio/work"
+            component={OurWork}
+          ></Route>
+          <Route
+            exact
+            path="/react-capture-portfolio/contact"
+            component={ContactUs}
+          ></Route>
+          <Route
+            exact
+            path="/react-capture-portfolio/work/:id"
+            component={MovieDetail}
+          ></Route>
         </Switch>
       </AnimatePresence>
     </div>

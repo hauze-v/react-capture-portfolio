@@ -14,27 +14,35 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">About Us</Link>
+          <Link to="/react-capture-portfolio">About Us</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "50%" : "0%" }}
+            animate={{
+              width: pathname === "/react-capture-portfolio" ? "50%" : "0%",
+            }}
           />
         </li>
         <li>
-          <Link to="/work">Our Work</Link>
+          <Link to="/react-capture-portfolio/work">Our Work</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/work" ? "50%" : "0%" }}
+            animate={{
+              width:
+                pathname === "/react-capture-portfolio/work" ? "50%" : "0%",
+            }}
           />
         </li>
         <li>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/react-capture-portfolio/contact">Contact Us</Link>
           <Line
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
-            animate={{ width: pathname === "/contact" ? "50%" : "0%" }}
+            animate={{
+              width:
+                pathname === "/react-capture-portfolio/contact" ? "50%" : "0%",
+            }}
           />
         </li>
       </ul>

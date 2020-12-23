@@ -45,7 +45,7 @@ const OurWork = () => {
         <Movie>
           <motion.h2 variants={fadeAnim}>The Athlete</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/work/the-athlete">
+          <Link to="/react-capture-portfolio/work/the-athlete">
             <Hide>
               <motion.img variants={photoAnim} src={athlete} alt="athlete" />
             </Hide>
@@ -59,7 +59,7 @@ const OurWork = () => {
         >
           <h2>The Racer</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/work/the-racer">
+          <Link to="/react-capture-portfolio/work/the-racer">
             <img src={car} alt="a racer" />
           </Link>
         </Movie>
@@ -71,7 +71,7 @@ const OurWork = () => {
         >
           <h2>Good Times</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="/work/good-times">
+          <Link to="/react-capture-portfolio/work/good-times">
             <img src={couple} alt="good times" />
           </Link>
         </Movie>

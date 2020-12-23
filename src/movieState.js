@@ -12,7 +12,7 @@ export const MovieState = () => {
       title: "The Athlete",
       mainImg: athlete,
       secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      url: "/react-capture-portfolio/work/the-athlete",
       awards: [
         {
           title: "Edge of your seat thrill ride.",
@@ -34,7 +34,7 @@ export const MovieState = () => {
     {
       title: "Good Times",
       mainImg: couple,
-      url: "/work/good-times",
+      url: "/react-capture-portfolio/work/good-times",
       secondaryImg: goodtimes2,
       awards: [
         {
@@ -57,7 +57,7 @@ export const MovieState = () => {
     {
       title: "The Racer",
       mainImg: car,
-      url: "/work/the-racer",
+      url: "/react-capture-portfolio/work/the-racer",
       secondaryImg: theracer2,
       awards: [
         {

@@ -24,7 +24,7 @@ function App() {
         <Switch location={location} key={location.key}>
           <Route
             exact
-            path="/react-capture-portfolio"
+            path="https://hauze-v.github.io/react-capture-portfolio/"
             component={AboutUs}
           ></Route>
           <Route

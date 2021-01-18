@@ -75,6 +75,7 @@ const Headline = styled.div`
   min-height: 90vh;
   padding-top: 20vh;
   position: relative;
+
   h2 {
     position: absolute;
     top: 10%;
@@ -89,6 +90,11 @@ const Headline = styled.div`
   @media (max-width: 500px) {
     h2 {
       font-size: 3rem;
+    }
+  }
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 2.75rem;
     }
   }
 `;
@@ -122,6 +128,11 @@ const AwardStyle = styled.div`
   @media (max-width: 500px) {
     padding: 2rem;
   }
+  @media (max-width: 400px) {
+    h3 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 const ImageDisplay = styled.div`
@@ -130,6 +141,13 @@ const ImageDisplay = styled.div`
     width: 100%;
     height: 100vh;
     object-fit: cover;
+  }
+  @media (max-width: 400px) {
+    img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
   }
 `;
 

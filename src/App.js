@@ -14,7 +14,6 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   /* Use useLocation to grab the page object which has a specific key for each page */
   const location = useLocation();
-  console.log(location.pathname);
 
   return (
     <div className="App">

@@ -181,12 +181,4 @@ const ContactForm = styled.div`
   }
 `;
 
-const Social = styled(motion.div)`
-  display: flex;
-  align-items: center;
-  h2 {
-    margin: 2rem;
-  }
-`;
-
 export default ContactUs;

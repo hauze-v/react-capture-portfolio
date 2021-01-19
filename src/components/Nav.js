@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link id="logo" to="/">
+        <Link id="logo" to="/react-capture-portfolio">
           Capture
         </Link>
       </h1>
